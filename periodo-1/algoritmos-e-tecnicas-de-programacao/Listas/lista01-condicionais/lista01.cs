@@ -1,7 +1,8 @@
 ﻿
-// 1° lista de exercícios - Comandos Condicionais
+// 1° lista de exercícios(40) - Comandos Condicionais
 
 using System;
+
 /*
 namespace Exercicio_1
 {
@@ -1286,3 +1287,4 @@ namespace Exercicio_41
         }
     }
 }
+*/

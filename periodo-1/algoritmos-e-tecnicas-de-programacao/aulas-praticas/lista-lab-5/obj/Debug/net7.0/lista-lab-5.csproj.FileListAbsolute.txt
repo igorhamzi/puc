@@ -1,0 +1,4 @@
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-5\obj\Debug\net7.0\lista-lab-5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-5\obj\Debug\net7.0\lista-lab-5.AssemblyInfoInputs.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-5\obj\Debug\net7.0\lista-lab-5.AssemblyInfo.cs
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-5\obj\Debug\net7.0\lista-lab-5.csproj.CoreCompileInputs.cache

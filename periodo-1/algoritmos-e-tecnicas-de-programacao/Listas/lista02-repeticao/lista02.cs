@@ -1,5 +1,5 @@
 ﻿
-// 2° lista de exercícios - Comandos de Repetição
+// 2° lista de exercícios(60) - Comandos de Repetição
 
 using System;
 

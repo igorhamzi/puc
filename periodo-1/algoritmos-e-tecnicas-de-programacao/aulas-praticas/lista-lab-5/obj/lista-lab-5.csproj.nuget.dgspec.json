@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista02-repeticao\\lista02-repeticao.csproj": {}
+    "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lista-lab-5.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista02-repeticao\\lista02-repeticao.csproj": {
+    "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lista-lab-5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista02-repeticao\\lista02-repeticao.csproj",
-        "projectName": "lista02-repeticao",
-        "projectPath": "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista02-repeticao\\lista02-repeticao.csproj",
+        "projectUniqueName": "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lista-lab-5.csproj",
+        "projectName": "lista-lab-5",
+        "projectPath": "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lista-lab-5.csproj",
         "packagesPath": "C:\\Users\\Igorw\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista02-repeticao\\obj\\",
+        "outputPath": "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

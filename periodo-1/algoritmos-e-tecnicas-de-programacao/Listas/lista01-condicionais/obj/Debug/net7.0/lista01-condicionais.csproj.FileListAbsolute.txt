@@ -1,0 +1,4 @@
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista01-condicionais\obj\Debug\net7.0\lista01-condicionais.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista01-condicionais\obj\Debug\net7.0\lista01-condicionais.AssemblyInfoInputs.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista01-condicionais\obj\Debug\net7.0\lista01-condicionais.AssemblyInfo.cs
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista01-condicionais\obj\Debug\net7.0\lista01-condicionais.csproj.CoreCompileInputs.cache
