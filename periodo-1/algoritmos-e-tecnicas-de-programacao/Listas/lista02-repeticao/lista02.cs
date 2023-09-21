@@ -574,7 +574,7 @@ namespace exercicio_40
         }
     }
 }
-*/
+
 namespace exercicio_39
 {
     class Ex39
@@ -582,7 +582,214 @@ namespace exercicio_39
     
         public static void Main(string[]args)
         {
+            Console.WriteLine("Digite a altura do triângulo");
+            double height = double.Parse(Console.ReadLine());
+            if(height <= 0) {
+                Console.Write("Digite um valor maior que 0 para a altura:");
+                height = double.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Digite a base do triângulo");
+            double baseT = double.Parse(Console.ReadLine());
+            if (baseT <= 0) {
+                Console.Write("Digite um valor maior que 0 para a base:");
+                baseT = double.Parse(Console.ReadLine());
+            }
             
+            Console.WriteLine($"A base do triângulo é: {baseT * height / 2}");
+        }
+    }
+}
+
+namespace exercicio_38
+{
+    class Ex38
+    {
+    
+        public static void Main(string[]args)
+        {
+
+        }
+    }
+}
+
+namespace exercicio_37
+{
+    class Ex37
+    {
+        public static void Main(string[]args)
+        {
+            for (int i = 1000; i <= 9999;i++) {
+                int soma = (i / 100) + (i % 1000);
+                if (Math.Pow(soma, 2) == i) Console.WriteLine(i);
+            }
+        }
+    }
+}
+
+namespace exercicio_36
+{
+    class Ex36
+    {
+        public static void Main(string[]args)
+        {
+
+            double soma = 0, somaQ = 0;
+
+            for (int i = 1; i <= 100; i++){
+                soma += i;
+                somaQ += Math.Pow(i, 2);
+            }
+            double result = Math.Pow(soma, 2);
+
+            Console.WriteLine($"A diferença é {result - somaQ}");
+        }
+    }
+}
+
+namespace exercicio_35
+{
+    class Ex35
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine("Digite o valor inicial e valor final:");
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+
+            int soma = 0;
+
+            if(a < b){
+                for(int i = a; i < b; i++){
+                    if (i % 2 != 0) soma += i;
+                }
+                Console.WriteLine($"Soma dos ímpares nesse intervalo: {soma}");
+            } else Console.WriteLine("Intervalo de valores inválidos");
+        }
+    }
+}
+
+namespace exercicio_34
+{
+    class Ex34
+    {
+        public static void Main(string[]args)
+        {
+            bool key = true;
+            int controller = 0, number = 0;
+
+            for(int i = 1; key; i++){
+                for(int j = 1; j <= 20; j++){
+                    if(i % j == 0) controller++;
+                }
+                if (controller == 20) {
+                    number = i;
+                    key = false;
+                }
+                controller = 0;
+            }
+            Console.WriteLine($"O menor número é {number}");
+        }
+    }
+}
+
+namespace exercicio_33
+{
+    class Ex33
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine("Digite o valor de n, i e j (maiores que 0):");
+            int n = int.Parse(Console.ReadLine());
+            int i = int.Parse(Console.ReadLine());
+            int j = int.Parse(Console.ReadLine());
+
+            int count = 0;
+
+            for(int h = 0; count < n; h++) {
+                if(h % i == 0 || h % j == 0) {
+                    Console.Write($"{h}, ");
+                    count++;
+                }
+            }
+        }
+    }
+}
+
+namespace exercicio_32
+{
+    class Ex32
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine("Digite o número de lançamentos:");
+            int n = int.Parse(Console.ReadLine());
+
+            string result = "";
+
+            for (int i = 0; i < n;i++){
+                Console.WriteLine("Digite o valor de d1 e d2:");
+                double d1 = double.Parse(Console.ReadLine());
+                double d2 = double.Parse(Console.ReadLine());
+                if (d1 == d2) result += $"{d1} = {d2} \n";
+                else if (d1 > d2) result += $"{d1} > {d2} \n";
+                else result += $"{d1} < {d2} \n";
+            }
+            Console.WriteLine(result);
+        }
+    }
+}
+
+namespace exercicio_31
+{
+    class Ex31
+    {
+        public static void Main(string[]args)
+        {
+            double s = 0;
+
+            int denom = 1;
+
+            for (int i = 1; i <= 100;i++){
+                if (i % 2 != 0){
+                    s += i / denom;
+                    denom++;
+                }
+            }
+            Console.WriteLine(s);
+        }
+    }
+}
+
+namespace exercicio_30
+{
+    class Ex30
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine("Digite o valor de n:");
+            int n = int.Parse(Console.ReadLine());
+
+            int r1 = 0, r2 = 0, r3 = 0;
+
+            for(int i = 1; i <= n;i++) r1 += i;
+            for(int i = 1; i <= (2*n - 1);i++) {
+                if (i % 2 != 0) {
+                    r2 -= i;
+                    r3 += i;
+                 } else r2 += i;
+            } 
+
+        }
+    }
+}
+*/
+namespace exercicio_29
+{
+    class Ex29
+    {
+        public static void Main(string[]args)
+        {
+
         }
     }
 }

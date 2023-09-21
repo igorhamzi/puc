@@ -1,0 +1,14 @@
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\bin\Debug\net7.0\lista02-repeticao.exe
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\bin\Debug\net7.0\lista02-repeticao.deps.json
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\bin\Debug\net7.0\lista02-repeticao.runtimeconfig.json
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\bin\Debug\net7.0\lista02-repeticao.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\bin\Debug\net7.0\lista02-repeticao.pdb
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\obj\Debug\net7.0\lista02-repeticao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\obj\Debug\net7.0\lista02-repeticao.AssemblyInfoInputs.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\obj\Debug\net7.0\lista02-repeticao.AssemblyInfo.cs
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\obj\Debug\net7.0\lista02-repeticao.csproj.CoreCompileInputs.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\obj\Debug\net7.0\lista02-repeticao.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\obj\Debug\net7.0\refint\lista02-repeticao.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\obj\Debug\net7.0\lista02-repeticao.pdb
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\obj\Debug\net7.0\lista02-repeticao.genruntimeconfig.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista02-repeticao\obj\Debug\net7.0\ref\lista02-repeticao.dll
