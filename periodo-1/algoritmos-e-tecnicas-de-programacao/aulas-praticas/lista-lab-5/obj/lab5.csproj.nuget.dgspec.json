@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lab5.csproj": {}
+    "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lab5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lab5.csproj": {
+    "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lab5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lab5.csproj",
+        "projectUniqueName": "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lab5.csproj",
         "projectName": "lab5",
-        "projectPath": "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lab5.csproj",
+        "projectPath": "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\lab5.csproj",
         "packagesPath": "C:\\Users\\Igorw\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\obj\\",
+        "outputPath": "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\aulas-praticas\\lista-lab-5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

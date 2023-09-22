@@ -782,14 +782,595 @@ namespace exercicio_30
         }
     }
 }
-*/
+
 namespace exercicio_29
+// Escreva um programa para calcular o valor da s  ́erie, para 5 termos.S = 0 + 1/2! + 2/4! + 3/6! + ...
 {
     class Ex29
     {
         public static void Main(string[]args)
         {
+            double s = 0;
+            int fat = 1;
+            int cont = 2;
+
+            for (int i = 1; i <= 6;i++){
+                for(int j = 1; j <= cont;j++) fat *= j;
+                s += i / fat;
+                cont += 2;
+            }
+
+            Console.WriteLine(s);
+        }
+    }
+}
+
+namespace exercicio_28
+// Fac ̧a um programa que leia um valor N inteiro e positivo, calcule o mostre o valor E, 
+// conforme a f  ́ormula a seguir E = 1 + 1/1! + 1/2! + 1/3! + ... + 1/N !
+{
+    class Ex28
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine("Digite o valor de N:");
+            int n = int.Parse(Console.ReadLine());
+
+            double e = 1;
+            int fat = 1;
+
+            for (int i = 1; i <= n;i++){
+                for(int j = 1; j <= i;j++) fat *= j;
+                e += 1 / fat;
+                fat = 1;
+            }
+            Console.WriteLine(e);
+        }
+    }
+}
+
+namespace exercicio_27
+// Em Matem  ́atica, o n  ́umero harm ˆonico designado por H(n) define-se como sendo a soma
+// da s  ́erie harm  ́onica: H(n) = 1 + 1/2 + 1/3 + 1/4 + ... + 1/n
+{
+    class Ex27
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine("Digite o valor de N:");
+            int n = int.Parse(Console.ReadLine());
+
+            double hn = 1;
+
+            for (int i = 2; i <= n;i++){
+                hn += 1 / i;
+            }
+            Console.WriteLine(hn);
+        }
+    }
+}
+
+namespace exercicio_26
+// Faca um algoritmo que encontre o primeiro m  ́ultiplo de 11, 13 ou 17 ap  ́os um n  ́umero dado.
+{
+    class Ex26
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine("Digite um número:");
+            int n = int.Parse(Console.ReadLine());
+
+            int controller = 0;
+            int count = 1;
+
+            while (controller == 0) {
+                if((n + count) % 11 == 0) {
+                    Console.WriteLine($"{n + count} múltiplo de 11");
+                    controller++;
+                }
+                if ((n + count) % 13 == 0) {
+                    Console.WriteLine($"{n + count} múltiplo de 13");
+                    controller++;
+                }
+                if ((n + count) % 17 == 0) {
+                    Console.WriteLine($"{n + count} múltiplo de 17");
+                    controller++;
+                }
+                count++;
+            }
+        }
+    }
+}
+
+namespace exercicio_25
+// Fac ̧a um programa que some todos os n  ́umeros naturais abaixo de 1000 que s  ̃ao m  ́ultiplos de 3 ou 5.
+{
+    class Ex25
+    {
+        public static void Main(string[]args)
+        {
+            int soma = 0;
+
+            for (int i = 1; i <= 1000;i++){
+                if (i % 3 == 0 || i % 5 == 0) soma += i;
+            }
+            Console.WriteLine(soma);
+        }
+    }
+}
+
+namespace exercicio_24
+// escreva um programa que leia um n  ́umero inteiro e calcule a soma de todos os divisores
+// desse n  ́umero, com excec ̧  ̃ao dele pr  ́oprio
+{
+    class Ex24
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine("Digite um número inteiro:");
+            int n = int.Parse(Console.ReadLine());
+
+            int soma = 0;
+
+            for (int i = 1; i < n;i++){
+                if (n % i == 0) soma += i;
+            }
+            Console.WriteLine(soma);
+        }
+    }
+}
+
+namespace exercicio_23
+// Faca um algoritmo que leia um n  ́umero positivo e imprima seus divisores.
+{
+    class Ex23
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine("Digite um número inteiro:");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n;i++){
+                if (n % i == 0) Console.WriteLine(i);
+            }
+        }
+    }
+}
+
+namespace exercicio_22
+// Escreva um programa completo que permita a qualquer aluno introduzir, pelo teclado,
+// uma sequ ˆencia arbitr  ́aria de notas (v  ́alidas no intervalo de 10 a 20) e que mostre na tela,
+// como resultado, a correspondente m  ́edia aritm  ́etica. O n  ́umero de notas com que o aluno
+// pretenda efetuar o c  ́alculo n  ̃ao ser  ́a fornecido ao programa, o qual terminar  ́a quando for
+// introduzido um valor que n  ̃ao seja v  ́alido como nota de aprovac ̧  ̃ao.
+{
+    class Ex22
+    {
+        public static void Main(string[]args)
+        {
+            double n, soma = 0;
+            int alunos = 1;
+
+            do {
+                Console.WriteLine($"Digite a nota do {alunos}° aluno:");
+                n = int.Parse(Console.ReadLine());
+                soma += n;
+                alunos++;
+            } while (n > 10 && n < 20);
+
+            Console.WriteLine($"a média das notas é: {soma / alunos}");
+        }
+    }
+}
+
+namespace exercicio_21
+// Fac ̧a um programa que receba dois n  ́umeros. Calcule e mostre:
+// • a soma dos n  ́umeros pares desse intervalo de n  ́umeros, incluindo os n  ́umeros digi-
+// tados;
+// • a multiplicac ̧  ̃ao dos n  ́umeros  ́ımpares desse intervalo, incluindo os digitados;
+
+{
+    class Ex21
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite o primeiro e segundo número:");
+            int n1 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
+
+            int s = 0, m = 1;
+
+            for (int i = n1; i <= n2;i++) if(i % 2 == 0) s += i; else m *= i;
+
+            Console.WriteLine($"A soma dos pares é: {s} \nA multiplicação dos ímpares é: {m}");
+        }
+    }
+}
+
+namespace exercicio_20
+// Ler uma sequ ˆencia de n  ́umeros inteiros e determinar se eles s  ̃ao pares ou n  ̃ao. Dever  ́a
+// ser informado o n  ́umero de dados lidos e n  ́umero de valores pares. O processo termina
+// quando for digitado o n  ́umero 1000.
+{
+    class Ex20
+    {
+        public static void Main(string[]args)
+        {
+            int n1, n2, p = 0, count = 0;
+
+            do {
+                Console.WriteLine($"Digite o primeiro e segundo número:");
+                n1 = int.Parse(Console.ReadLine());
+                n2 = int.Parse(Console.ReadLine());
+
+                for (int i = n1; i <= n2;i++) {
+                    if(i % 2 == 0) p++;
+                    count++;
+                } 
+            } while (n1 != 1000 && n2 != 1000);
+
+            Console.WriteLine($"foram lidos {count} número e {p} foram pares!");
+        }
+    }
+}
+
+namespace exercicio_19
+// Escreva um algoritmo que leia um n  ́umero inteiro entre 100 e 999 e imprima na sa ́ıda
+// cada um dos algarismos que comp  ̃oem o n  ́umero
+{
+    class Ex19
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite um número de 100 a 999:");
+            int n = int.Parse(Console.ReadLine());
+
+            int c = n / 100;
+            int d = n / 10 - (c * 10);
+            int u = n - ((c * 100) + (d * 10));
+
+            Console.WriteLine($"unidade: {u}\ndezena:{d}\ncentena:{c}");
+        }
+    }
+}
+
+namespace exercicio_18
+// Escreva um algoritmo que leia certa quantidade de n  ́umeros e imprima o maior deles e
+// quantas vezes o maior n  ́umero foi lido. A quantidade de n  ́umeros a serem lidos deve ser
+// fornecida pelo usu  ́ario.
+{
+    class Ex18
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite a quantidade de números lidos:");
+            int n = int.Parse(Console.ReadLine());
+
+            int count = 1, bigger = 0, cBigger = 0;
+
+            do {
+                Console.WriteLine($"Digite o {count}° valor:");
+                int value = int.Parse(Console.ReadLine());
+                if (value > bigger) {
+                    bigger = value;
+                    cBigger = 0;
+                }
+                if (value == bigger) cBigger++;
+                count++;
+            }while (count <= n);
+
+            Console.WriteLine($"O maior número foi: {bigger} e foi lido {cBigger} vezes");
+        }
+    }
+}
+
+namespace exercicio_17
+// Faça um programa que leia um número inteiro positivo n e calcule a soma dos n primeiros
+// números naturais.
+{
+    class Ex17
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite o valor de n:");
+            int n = int.Parse(Console.ReadLine());
+
+            int soma = 0;
+
+            for (int i = 1; i <= n; i++) soma += i;
+
+            Console.WriteLine($"A soma dos {n} primeiros números naturais é: {soma}");
+        }
+    }
+}
+
+namespace exercicio_16
+// Faça um programa que leia um número inteiro positivo ímpar N e imprima todos os números
+// ímpares de 1 até N em ordem decrescente.
+{
+    class Ex16
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite o valor de n (ímpar):");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = n; i >= 1; i--) if (i % 2 != 0) Console.WriteLine(i);
 
         }
     }
 }
+
+namespace exercicio_15
+// Faça um programa que leia um número inteiro positivo ímpar N e imprima todos os números
+// ímpares de 1 até N em ordem crescente.
+{
+    class Ex15
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite o valor de n (ímpar):");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++) if (i % 2 != 0) Console.WriteLine(i);
+
+        }
+    }
+}
+
+namespace exercicio_14
+// Faça um programa que leia um número inteiro positivo par N e imprima todos os números
+// pares de 0 até N em ordem decrescente.
+{
+    class Ex14
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite o valor de n (par):");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = n; i >= 1; i--) if (i % 2 == 0) Console.WriteLine(i);
+
+        }
+    }
+}
+
+namespace exercicio_13
+// Faça um programa que leia um número inteiro positivo par N e imprima todos os números
+// pares de 0 até N em ordem crescente.
+{
+    class Ex13
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite o valor de n (par):");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++) if (i % 2 == 0) Console.WriteLine(i);
+
+        }
+    }
+}
+
+namespace exercicio_12
+// Faça um programa que leia um número inteiro positivo N e imprima todos os números
+// naturais de 0 até N em ordem decrescente.
+{
+    class Ex12
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite o valor de n (par):");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = n; i >= 1; i--) Console.WriteLine(i);
+
+        }
+    }
+}
+
+namespace exercicio_11
+// Faça um programa que leia um número inteiro positivo N e imprima todos os números
+//naturais de 0 até N em ordem crescente.
+{
+    class Ex11
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite o valor de n (par):");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++) Console.WriteLine(i);
+
+        }
+    }
+}
+
+namespace exercicio_10
+// Faça um programa que calcule e mostre a soma dos 50 primeiros números pares.
+{
+    class Ex10
+    {
+        public static void Main(string[]args)
+        {
+            int soma = 0;
+
+            for (int i = 1; i <= 50; i++) if (i % 2 == 0) soma += i;
+            Console.WriteLine(soma);
+        }
+    }
+}
+
+namespace exercicio_09
+// Faça um programa que leia um número inteiro N e depois imprima os N primeiros números
+// naturais ímpares
+{
+    class Ex09
+    {
+        public static void Main(string[]args)
+        {
+            Console.WriteLine($"Digite o valor de n (ímpar):");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++) if (i % 2 != 0) Console.WriteLine(i);
+        }
+    }
+}
+
+namespace exercicio_08
+// Escreva um programa que leia 10 números e escreva o menor valor lido e o maior valor lido.
+{
+    class Ex08
+    {
+        public static void Main(string[]args)
+        {
+            int bigger = 0, smaller = 0;
+            for(int i = 1; i <= 10; i++){
+                Console.WriteLine($"Digite o {i}° valor:");
+                int n = int.Parse(Console.ReadLine());
+
+                if (smaller == 0 || smaller > n) smaller = n;
+                else if(bigger < n) bigger = n;
+            }
+        }
+    }
+}
+
+namespace exercicio_07
+// Faça um programa que leia 10 inteiros positivos, ignorando não positivos, e imprima sua
+// média.
+{
+    class Ex07
+    {
+        public static void Main(string[]args)
+        {
+            int soma = 0, count = 0;
+            for(int i = 1; i <= 10; i++){
+                Console.WriteLine($"Digite o {i}° valor:");
+                int n = int.Parse(Console.ReadLine());
+                if (n > 0) {
+                    soma += n;
+                    count++;
+                }
+            }
+            Console.WriteLine($"A média é: {soma / count}");
+        }
+    }
+}
+
+namespace exercicio_06
+// Faça um programa que leia 10 inteiros e imprima sua média
+{
+    class Ex06
+    {
+        public static void Main(string[]args)
+        {
+            int soma = 0, media = 0;
+            for(int i = 1; i <= 10; i++){
+                Console.WriteLine($"Digite o {i}° valor:");
+                int n = int.Parse(Console.ReadLine());
+                soma += n;
+                media = soma / i;
+            }
+            Console.WriteLine($"A média é: {media}");
+        }
+    }
+}
+
+namespace exercicio_05
+// Faça um programa que peça ao usuário para digitar 10 valores e some-os.
+{
+    class Ex05
+    {
+        public static void Main(string[]args)
+        {
+            int soma = 0;
+            for(int i = 1; i <= 10; i++){
+                Console.WriteLine($"Digite o {i}° valor:");
+                int n = int.Parse(Console.ReadLine());
+                soma += n;
+            }
+            Console.WriteLine($"A soma é: {soma}");
+        }
+    }
+}
+
+namespace exercicio_04
+// Escreva um programa que declare um inteiro, inicialize-o com 0, e incremente-o de 1000 em
+// 1000, imprimindo seu valor na tela, até que seu valor seja 100000 (cem mil).
+{
+    class Ex04
+    {
+        public static void Main(string[]args)
+        {
+            int n = 0;
+            for(int i = 1; n < 100000; i++){
+                n += 1000;
+                Console.WriteLine(n);
+            }
+        }
+    }
+}
+
+namespace exercicio_03
+// Faça um algoritmo utilizando o comando while que mostra uma contagem regressiva na tela,
+// iniciando em 10 e terminando em 0. Mostrar uma mensagem ͞ FIM!͟ apó s a contagem.
+{
+    class Ex03
+    {
+        public static void Main(string[]args)
+        {
+            int n = 10;
+            while (n >= 0){
+                Console.WriteLine(n);
+                if (n == 0) Console.WriteLine("FIM!");
+                n--;
+            }
+        }
+    }
+}
+
+namespace exercicio_02
+// Escreva um programa que escreva na tela, de 1 até 100, de 1 em 1, 3 vezes. A primeira vez
+// deve usar a estrutura de repetição for, a segunda while, e a terceira do while
+{
+    class Ex02
+    {
+        public static void Main(string[]args)
+        {
+            for (int i = 1; i <= 100; i++) Console.Write($"{i}, ");
+
+            int count = 1;
+            while (count <= 100){
+                Console.Write(count);
+                count++;
+            }
+
+            count = 1;
+            do {
+                Console.Write(count);
+                count++;
+            } while (count <= 100);
+        }
+    }
+}
+
+namespace exercicio_01
+// Faça um programa que determine o mostre os cinco primeiros múltiplos de 3, considerando
+// números maiores que 0.
+{
+    class Ex01
+    {
+        public static void Main(string[]args)
+        {
+            int count = 0;
+            for (int i = 1; count < 5; i++) {
+                if (i % 3 == 0){
+                    Console.Write($"{i}, ");
+                    count++;
+                }
+            }
+        }
+    }
+}
+*/
