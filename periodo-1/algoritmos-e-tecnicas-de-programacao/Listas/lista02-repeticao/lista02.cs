@@ -252,17 +252,41 @@ namespace exercicio_52
 			Console.WriteLine("Digite o valor de saque:");
 			int s = int.Parse(Console.ReadLine());
 
-            int cem = 0, cinquenta =0, vinte = 0, dez = 0, cinco = 0, dois = 0, um = 0;
+            int i100 = 0, i50 =0, i20 = 0, i10 = 0, i5 = 0, i2 = 0, i1 = 0;
 
-            if (s >= 100) {
-                if (s % 100 == 0) {
-                    cem = s / 100;
-                } else {
-                    if (s % 100 > 50) {
-
-                    }
+            while (s > 0) {
+                if (100 < s){
+                    i100++;
+                    s -= 100;
+                }else if (50 < s){
+                    i50++;
+                    s -= 50;
+                }else if (20 < s){
+                    i20++;
+                    s -= 20;
+                }else if (10 < s){
+                    i10++;
+                    s -= 10;
+                }else if (5 < s){
+                    i5++;
+                    s -= 5;
+                }else if (2 < s){
+                    i2++;
+                    s -= 2;
+                }else if (1 == s){
+                    i1++;
+                    s -= 1;
                 }
             }
+
+            Console.WriteLine("Foi preciso das seguintes quantidades de notas: \n" +
+            $"100: {i100} \n" + 
+            $"50: {i50} \n" + 
+            $"20: {i20} \n" + 
+            $"10: {i10} \n" + 
+            $"5: {i5} \n" + 
+            $"2: {i2} \n" + 
+            $"1: {i1} \n");
 		}
 	}
 }
