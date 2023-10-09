@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista01-condicionais\\lista01-condicionais.csproj": {}
+    "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista01-condicionais\\lista01-condicionais.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista01-condicionais\\lista01-condicionais.csproj": {
+    "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista01-condicionais\\lista01-condicionais.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista01-condicionais\\lista01-condicionais.csproj",
+        "projectUniqueName": "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista01-condicionais\\lista01-condicionais.csproj",
         "projectName": "lista01-condicionais",
-        "projectPath": "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista01-condicionais\\lista01-condicionais.csproj",
+        "projectPath": "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista01-condicionais\\lista01-condicionais.csproj",
         "packagesPath": "C:\\Users\\Igorw\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista01-condicionais\\obj\\",
+        "outputPath": "C:\\Users\\Igorw\\OneDrive\\Documentos\\si_puc\\periodo-1\\algoritmos-e-tecnicas-de-programacao\\Listas\\lista01-condicionais\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
