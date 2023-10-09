@@ -1,0 +1,14 @@
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\bin\Debug\net7.0\lista03-vetor-e-matriz.exe
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\bin\Debug\net7.0\lista03-vetor-e-matriz.deps.json
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\bin\Debug\net7.0\lista03-vetor-e-matriz.runtimeconfig.json
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\bin\Debug\net7.0\lista03-vetor-e-matriz.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\bin\Debug\net7.0\lista03-vetor-e-matriz.pdb
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\obj\Debug\net7.0\lista03-vetor-e-matriz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\obj\Debug\net7.0\lista03-vetor-e-matriz.AssemblyInfoInputs.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\obj\Debug\net7.0\lista03-vetor-e-matriz.AssemblyInfo.cs
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\obj\Debug\net7.0\lista03-vetor-e-matriz.csproj.CoreCompileInputs.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\obj\Debug\net7.0\lista03-vetor-e-matriz.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\obj\Debug\net7.0\refint\lista03-vetor-e-matriz.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\obj\Debug\net7.0\lista03-vetor-e-matriz.pdb
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\obj\Debug\net7.0\lista03-vetor-e-matriz.genruntimeconfig.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\Listas\lista03-vetor-e-matriz\obj\Debug\net7.0\ref\lista03-vetor-e-matriz.dll
