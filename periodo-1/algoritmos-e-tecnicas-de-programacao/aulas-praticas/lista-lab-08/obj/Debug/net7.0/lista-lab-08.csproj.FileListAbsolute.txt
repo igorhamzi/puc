@@ -1,0 +1,14 @@
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\bin\Debug\net7.0\lista-lab-08.exe
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\bin\Debug\net7.0\lista-lab-08.deps.json
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\bin\Debug\net7.0\lista-lab-08.runtimeconfig.json
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\bin\Debug\net7.0\lista-lab-08.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\bin\Debug\net7.0\lista-lab-08.pdb
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\obj\Debug\net7.0\lista-lab-08.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\obj\Debug\net7.0\lista-lab-08.AssemblyInfoInputs.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\obj\Debug\net7.0\lista-lab-08.AssemblyInfo.cs
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\obj\Debug\net7.0\lista-lab-08.csproj.CoreCompileInputs.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\obj\Debug\net7.0\lista-lab-08.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\obj\Debug\net7.0\refint\lista-lab-08.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\obj\Debug\net7.0\lista-lab-08.pdb
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\obj\Debug\net7.0\lista-lab-08.genruntimeconfig.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\aulas-praticas\lista-lab-08\obj\Debug\net7.0\ref\lista-lab-08.dll
