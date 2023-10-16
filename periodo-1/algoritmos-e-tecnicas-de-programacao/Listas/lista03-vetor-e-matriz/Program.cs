@@ -304,7 +304,7 @@ namespace exercicio_13
         }
     }
 }
-*/
+
 namespace exercicio_14
 {
     class Ex14
@@ -315,17 +315,172 @@ namespace exercicio_14
 
             for (int i = 0; i < array.Length; i++){
                 Console.WriteLine($"Digite a nota do {i+1}° aluno:");
-                int n = int.Parse(Console.ReadLine());
-
-                for (int j = 0; j < i + 1; j++){
-                    if (array[j] == n){
-                        Console.WriteLine($"valores repetidos na posição: {i + 1} e {j + 1}");
-                    } 
-                }
+                array[i] = int.Parse(Console.ReadLine());
             }
 
-            for (int i = 0; i < array.Length; i++) Console.Write($"{array[i]}, ");
+            for (int i = 1; i < array.Length; i++){
+                for (int j = 0; j < i; j++){
+                    if (array[j] == array[i]){
+                        Console.WriteLine($"valor {array[i]} repetido nas posições: {i + 1} e {j + 1}");
+                    }
+                }
+            }
 
         }
     }
 }
+
+namespace exercicio_15
+{
+    class Ex15
+    {
+        public static void Main(string[]args)
+        {
+            int[] array = new int [5];
+
+            for (int i = 0; i < array.Length; i++){
+                Console.WriteLine($"Digite a nota do {i+1}° aluno:");
+                array[i] = int.Parse(Console.ReadLine());
+            }
+
+            for (int i = 1; i < array.Length; i++){
+                for (int j = 0; j < i; j++){
+                    if (array[j] == array[i]){
+                        array[j] = 0;
+                        array[i] = 0;
+                    }
+                }
+            }
+
+            for (int i = 0; i < array.Length; i++) Console.WriteLine($"{array[i]}, ");
+        }
+    }
+}
+
+namespace exercicio_16
+{
+    class Ex16
+    {
+        public static void Main(string[]args)
+        {
+            double[] array = new double [5];
+
+            for (int i = 0; i < array.Length; i++){
+                Console.WriteLine($"Digite o valor da {i+1}° posição:");
+                array[i] = double.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine($"Digite o valor do código:");
+            int c = int.Parse(Console.ReadLine());
+
+            switch (c) {
+                case 1:
+                for (int i = 0; i < array.Length; i++) Console.WriteLine($"{array[i]}, ");
+                break;
+
+                case 2:
+                for (int i = array.Length - 1; i >= 0; i--) Console.WriteLine($"{array[i]}, ");
+                break;
+            }
+
+            if (c != 0 && c != 1 && c != 1) Console.WriteLine("O código é inválido");
+
+        }
+    }
+}
+
+namespace exercicio_17
+{
+    class Ex17
+    {
+        public static void Main(string[]args)
+        {
+            double[] array = new double [5];
+
+            for (int i = 0; i < array.Length; i++){
+                Console.WriteLine($"Digite o valor da {i+1}° posição:");
+                array[i] = double.Parse(Console.ReadLine());
+            }
+
+            for (int i = 0; i < array.Length; i++) if(array[i] < 0) array[i] = 0;
+        }
+    }
+}
+
+namespace exercicio_18
+{
+    class Ex18
+    {
+        public static void Main(string[]args)
+        {
+            double[] array = new double [10];
+
+            for (int i = 0; i < array.Length; i++){
+                Console.WriteLine($"Digite o valor da {i+1}° posição:");
+                array[i] = double.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine($"Informe um valor inteiro:");
+            int x = int.Parse(Console.ReadLine());
+
+            int count = 0;
+
+            for (int i = 0; i < array.Length; i++) if(array[i] % x == 0) count++;
+
+            Console.WriteLine($"{count}");
+        }
+    }
+}
+
+namespace exercicio_19
+{
+    class Ex19
+    {
+        public static void Main(string[]args)
+        {
+            double[] array = new double [50];
+
+            for (int i = 0; i < array.Length; i++){
+                int p = i + 1;
+                array[i] = (p + 5 * p) % (p + 1);
+            }
+
+            for (int i = 0; i < array.Length; i++) Console.Write($"{array[i]}, ");
+        }
+    }
+}
+
+namespace exercicio_20
+{
+    class Ex20
+    {
+        public static void Main(string[]args)
+        {
+            int[] array = new int [5];
+
+            int countImpares = 0;
+
+            for (int i = 0; i < array.Length; i++){
+                do{
+                    Console.WriteLine($"Digite o valor (inteiro) da {i+1}° posição:");
+                    array[i] = int.Parse(Console.ReadLine());
+                    if(array[i] % 2 != 0) countImpares++;
+                }while (array[i] < 0 || array[i] > 50);
+            }
+
+            int[] impares = new int [countImpares];
+
+            for (int i = 0, j = 0; i < array.Length; i++){
+                if(array[i] % 2 != 0){
+                    impares[j]= array[i];
+                    j++;
+                }  
+            }
+
+            for (int i = 0; i < array.Length; i++) Console.Write($"{array[i]}, ");
+            Console.WriteLine($"");
+            for (int i = 0; i < impares.Length; i++) Console.Write($"{impares[i]}, ");
+        }
+    }
+}
+*/
