@@ -2,6 +2,7 @@
 // 3° lista de exercícios(64) - Vetores e Matrizes
 
 using System;
+using System.Net.Http.Headers;
 
 /*
 namespace exercicio_01
@@ -483,4 +484,237 @@ namespace exercicio_20
         }
     }
 }
+
+namespace exercicio_31
+{
+    class Ex31
+    {
+        public static void Main(string[]args)
+        {
+            int[] veta = new int[10];
+            int[] vetb = new int[10];
+            Random rand = new Random();
+        
+            for(int i = 0;i<veta.Length;i++){
+                veta[i] = rand.Next(1, 20);
+                vetb[i] = rand.Next(1, 20);
+            }
+        
+            int[] vetc = new int[20];
+            int cont = 0;
+        
+            for(int i=0;i<veta.Length;i++){
+                vetc[cont] = veta[i];
+                vetc[cont+1] = vetb[i];
+                cont+=2;
+            }
+        
+            for(int i = 0;i<vetc.Length;i++){
+                for(int j = i+1;j<vetc.Length;j++){
+                    if(vetc[i]==vetc[j]){
+                        vetc[i] = 0;
+                    }
+                }
+            }
+            for (int i = 0; i < vetc.Length; i++) Console.Write($"{vetc[i]}, ");
+        }
+    }
+}
+
+namespace exercicio_21
+{
+    class Ex21
+    {
+        public static void Main(string[]args)
+        {
+            int[] a = new int [10];
+            int[] b = new int [10];
+            int[] c = new int [10];
+
+            for (int i = 0; i < a.Length; i++){
+                Console.WriteLine($"Digite o valor (inteiro) da {i+1}° posição do vetor A:");
+                Console.WriteLine($"Digite o valor (inteiro) da {i+1}° posição do vetor B:");
+                a[i] = int.Parse(Console.ReadLine());
+                b[i] = int.Parse(Console.ReadLine());
+                c[i] = a[i] - b[i];
+            }
+
+            for (int i = 0; i < c.Length; i++) Console.Write($"{c[i]}, ");
+
+        }
+    }
+}
+
+namespace exercicio_22
+{
+    class Ex22
+    {
+        public static void Main(string[]args)
+        {
+            int[] a = new int [5];
+            int[] b = new int [5];
+
+            for (int i = 0; i < a.Length; i++){
+                Console.WriteLine($"Digite o valor (inteiro) da {i+1}° posição do vetor A:");
+                Console.WriteLine($"Digite o valor (inteiro) da {i+1}° posição do vetor B:");
+                a[i] = int.Parse(Console.ReadLine());
+                b[i] = int.Parse(Console.ReadLine());
+            }
+
+            int[] c = new int [10];
+
+            for (int i = 0, j = 0; i < c.Length; i++){
+                if (i % 2 == 0) c[i] = a[j];
+                else {
+                    c[i] = b[j];
+                    j++;
+                }
+            }
+
+            for (int i = 0; i < c.Length; i++) Console.Write($"{c[i]}, ");
+        }
+    }
+}
+
+namespace exercicio_23
+{
+    class Ex23
+    {
+        public static void Main(string[]args)
+        {
+            float[] a = new float [5];
+            float[] b = new float [5];
+
+            for (int i = 0; i < a.Length; i++){
+                Console.WriteLine($"Digite o valor (inteiro) da {i+1}° posição do vetor A:");
+                Console.WriteLine($"Digite o valor (inteiro) da {i+1}° posição do vetor B:");
+                a[i] = float.Parse(Console.ReadLine());
+                b[i] = float.Parse(Console.ReadLine());
+            }
+
+            float r = 0;
+
+            for (int i = 0; i < a.Length; i++) r += a[i] * b[i];
+
+            for (int i = 0; i < a.Length; i++) Console.Write($"{a[i]}, ");
+            Console.WriteLine(" ");
+            for (int i = 0; i < b.Length; i++) Console.Write($"{b[i]}, ");
+            Console.WriteLine(" ");
+            Console.Write(r);
+        }
+    }
+}
+
+namespace exercicio_24
+{
+    class Ex24
+    {
+        public static void Main(string[]args)
+        {
+
+            float smaller = 0, height = 0;
+
+            for (int i = 0, j = 0; i < 10; i++){
+                float[] b = new float [2];
+                Console.WriteLine($"Digite o número do {i+1} aluno:");
+                b[j] = float.Parse(Console.ReadLine());
+                Console.WriteLine($"Digite a altura do {i+1} aluno:");
+                b[j+1] = float.Parse(Console.ReadLine());
+
+                if (height == 0) {
+                    smaller = b[j];
+                    height = b[j+1];
+                } else if (height > b[j+1]) {
+                    smaller = b[j];
+                    height = b[j+1];
+                }
+            }
+
+            Console.Write($"O aluno mais baixo é de número{smaller} e altura {height}");
+        }
+    }
+}
+
+namespace exercicio_25
+{
+    class Ex25
+    {
+        public static void Main(string[]args)
+        {
+            int[] array = new int [100];
+
+            for (int i = 0, j = 0; i < array.Length; j++){
+                if (j % 7 != 0 && j % 10 != 7){
+                    array[i] = j;
+                    i++;
+                }
+            }
+
+            for (int i = 0; i < array.Length; i++) Console.Write($"{array[i]}, ");
+        }
+    }
+}
+
+namespace exercicio_26
+{
+    class Ex26
+    {
+        public static void Main(string[]args)
+        {
+            int[] v = new int [10];
+
+            int m = 0;
+            double somatorio = 0;
+
+            for (int i = 0; i < v.Length; i++){
+                Console.WriteLine($"Digite o valor (inteiro) da {i+1}° posição do vetor V:");
+                v[i] = int.Parse(Console.ReadLine());
+                m += v[i];
+            }
+
+            for (int j = 0; j < v.Length; j++){
+                for (int i = 1; j <= v[j]; i++) {
+                    int x = v[i] - (m / v.Length);
+                    somatorio += Math.Pow(x, 2);
+                }
+            }
+
+            double desvioPadrao = 0;
+
+
+
+            
+            
+            for (int i = 0; i < array.Length; i++) Console.Write($"{array[i]}, ");
+        }
+    }
+}
 */
+namespace exercicio_27
+{
+    class Ex27
+    {
+        public static void Main(string[]args)
+        {
+            int[] array = new int [10];
+
+
+            for (int i = 0; i < array.Length; i++){
+                Console.WriteLine($"Digite o valor (inteiro) da {i+1}° posição do vetor V:");
+                array[i] = int.Parse(Console.ReadLine());
+            }
+
+            bool primo = true;
+
+            for (int i = 0; i < array.Length; i++){
+                for (int j = 2; j < array[i]; j++){
+                    if ( array[i] % j == 0 ) primo = false;
+                }
+                if (primo) Console.WriteLine($"{array[i]} posição: {i+1}");
+                else primo = true;
+            }
+            
+            for (int i = 0; i < array.Length; i++) Console.Write($"{array[i]}, ");
+        }
+    }
+}
