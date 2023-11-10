@@ -28,47 +28,36 @@ class Cartela{
     }
 }
 
-class Jogador{
+
+class Jogador
+{
     public string nome;
     public int idade;
     public string sexo;
     public int qntCartelas;
+    public int[][,] cartelas;
+    // https://stackoverflow.com/questions/1582555/initialize-int-in-c-sharp
 
-    public int [,] cartela1 = new int[5,5];
-    public int [,] cartela2 = new int[5,5];
-    public int [,] cartela3 = new int[5,5];
-    public int [,] cartela4 = new int[5,5];
-    
-    public Jogador(string nome,string sexo,int idade, int qntCartelas ){
+    public Jogador(string nome, string sexo, int idade, int qntCartelas)
+    {
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
         this.qntCartelas = qntCartelas;
+        cartelas = new int[qntCartelas][,];
         ObterCartelas(qntCartelas);
     }
-    public void ObterCartelas(int x){
-        switch(x){
-            case 1:
-                cartela1 = Cartela.ObterCartela();
-                break;
-            case 2:
-                cartela1 = Cartela.ObterCartela();
-                cartela2 = Cartela.ObterCartela();
-                break;
-            case 3:
-                cartela1 = Cartela.ObterCartela();
-                cartela2 = Cartela.ObterCartela();
-                cartela3 = Cartela.ObterCartela();
-                break;
-            case 4:
-                cartela1 = Cartela.ObterCartela();
-                cartela2 = Cartela.ObterCartela();
-                cartela3 = Cartela.ObterCartela();
-                cartela4 = Cartela.ObterCartela();
-                break;
+
+    public void ObterCartelas(int x)
+    {
+        for (int i = 0; i < x; i++)
+        {
+            cartelas[i] = Cartela.ObterCartela();
         }
     }
 }
+
+
 
 class Bingo{
     public static void Main(){
@@ -100,47 +89,19 @@ class Bingo{
 
             jogadores[i] = new Jogador(nome, sexo, idade, qntCartelas);
         }
+
         /* IMPRIME AS CARTELAS DOS JOGADORES
-        for (int i = 0; i < x; i++){
+        for (int i = 0; i < qntJogadores; i++){
             Console.WriteLine($"Imprimir as cartelas do {jogadores[i].nome}:");
             Console.Write($"\n");
 
-            
-            int qnt = jogadores[i].qntCartelas;
-
-            switch(qnt){
-                case 1:
-                    Cartela.ImprimirCartela(jogadores[i].cartela1);
-                break;
-                case 2:
-                    Cartela.ImprimirCartela(jogadores[i].cartela1);
-                    Console.WriteLine($"\n");
-                    Cartela.ImprimirCartela(jogadores[i].cartela2);
-                break;
-                case 3:
-                    Cartela.ImprimirCartela(jogadores[i].cartela1);
-                    Console.WriteLine($"\n");
-
-                    Cartela.ImprimirCartela(jogadores[i].cartela2);
-                    Console.WriteLine($"\n");
-                    Cartela.ImprimirCartela(jogadores[i].cartela3);
-                break;
-                case 4:
-                    Cartela.ImprimirCartela(jogadores[i].cartela1);
-                    Console.WriteLine($"\n");
-                    Cartela.ImprimirCartela(jogadores[i].cartela2);
-                    Console.WriteLine($"\n");
-                    Cartela.ImprimirCartela(jogadores[i].cartela3);
-                    Console.WriteLine($"\n");
-                    Cartela.ImprimirCartela(jogadores[i].cartela4);
-                break;
+            for(int j = 0; j < jogadores[i].cartelas.Length; j++){
+                Cartela.ImprimirCartela(jogadores[i].cartelas[j]);
+                Console.WriteLine($"\n");
+                Console.WriteLine($"\n");
             }
-            Console.WriteLine($"\n");
-            Console.WriteLine($"\n");
-            Console.WriteLine($"\n");
         }
         */
-
         Console.WriteLine("Todos com suas devidas cartelas, vamos iniciar o BINGO!");
     }
 }
