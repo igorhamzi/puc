@@ -1,27 +1,35 @@
 ﻿// Trabalho prático BINGO
 
 using System;
+using System.Reflection.Metadata.Ecma335;
 
-class Cartela{
-/*
-    private int qntCartelas;
-*/
-    public static int[,] ObterCartela(){
+class Cartela
+{
+    /*
+        private int qntCartelas;
+    */
+    public static int[,] ObterCartela()
+    {
         Random rnd = new Random();
-        int [,] cartela = new int[5,5];
-        for (int i = 0; i < 5; i++){
-            for(int j = 0; j < 5; j++){
-                if(i == 2 && j == 2) cartela[i,j] = 0;
-                else cartela[i,j] = rnd.Next(1, 75);
+        int[,] cartela = new int[5, 5];
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                if (i == 2 && j == 2) cartela[i, j] = 0;
+                else cartela[i, j] = rnd.Next(1, 75);
             }
         }
         return cartela;
     }
 
-    public static void ImprimirCartela(int[,] cartela){
-        for (int i = 0; i < 5; i++){
-            for(int j = 0; j < 5; j++){
-                Console.Write($"{cartela[i,j]}  ");
+    public static void ImprimirCartela(int[,] cartela)
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                Console.Write($"{cartela[i, j]}  ");
             }
             Console.WriteLine($"\n");
         }
@@ -57,20 +65,14 @@ class Jogador
     }
 }
 
-
-
-class Bingo{
-    public static void Main(){
-        int qntJogadores;
-
-        do{
-            Console.WriteLine("Quantas pessoas irão jogar? (min:2 max:5)");
-            qntJogadores = int.Parse(Console.ReadLine());
-        } while (qntJogadores < 2 || qntJogadores > 5);
-
+class Preparation
+{
+    public static Jogador[] ObterJogadores(int qntJogadores)
+    {
         Jogador[] jogadores = new Jogador[qntJogadores];
 
-        for (int i = 0; i < jogadores.Length; i++){
+        for (int i = 0; i < jogadores.Length; i++)
+        {
             Console.WriteLine($"jogador {i + 1}: qual? seu nome");
             string nome = Console.ReadLine();
 
@@ -82,7 +84,8 @@ class Bingo{
 
             int qntCartelas;
 
-            do{
+            do
+            {
                 Console.WriteLine($"jogador {i + 1}: quantas cartelas você quer? (min:1 max:4)");
                 qntCartelas = int.Parse(Console.ReadLine());
             } while (qntCartelas < 1 || qntCartelas > 4);
@@ -102,6 +105,39 @@ class Bingo{
             }
         }
         */
+
+        return jogadores;
+    }
+}
+
+class Bingo
+{
+    public static void Main()
+    {
+        int qntJogadores;
+        do
+        {
+            Console.WriteLine("Quantas pessoas irão jogar? (min:2 max:5)");
+            qntJogadores = int.Parse(Console.ReadLine());
+        } while (qntJogadores < 2 || qntJogadores > 5);
+
+        Jogador[] jogadores = Preparation.ObterJogadores(qntJogadores);
+
+        /*
+        for (int i = 0; i < qntJogadores; i++)
+        {
+            Console.WriteLine($"Imprimir as cartelas do {jogadores[i].nome}:");
+            Console.Write($"\n");
+
+            for (int j = 0; j < jogadores[i].cartelas.Length; j++)
+            {
+                Cartela.ImprimirCartela(jogadores[i].cartelas[j]);
+                Console.WriteLine($"\n");
+                Console.WriteLine($"\n");
+            }
+        }
+        */
+
         Console.WriteLine("Todos com suas devidas cartelas, vamos iniciar o BINGO!");
     }
 }
