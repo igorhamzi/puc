@@ -1,0 +1,14 @@
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\bin\Debug\net7.0\trabalho-pratico.exe
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\bin\Debug\net7.0\trabalho-pratico.deps.json
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\bin\Debug\net7.0\trabalho-pratico.runtimeconfig.json
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\bin\Debug\net7.0\trabalho-pratico.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\bin\Debug\net7.0\trabalho-pratico.pdb
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\obj\Debug\net7.0\trabalho-pratico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\obj\Debug\net7.0\trabalho-pratico.AssemblyInfoInputs.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\obj\Debug\net7.0\trabalho-pratico.AssemblyInfo.cs
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\obj\Debug\net7.0\trabalho-pratico.csproj.CoreCompileInputs.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\obj\Debug\net7.0\trabalho-pratico.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\obj\Debug\net7.0\refint\trabalho-pratico.dll
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\obj\Debug\net7.0\trabalho-pratico.pdb
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\obj\Debug\net7.0\trabalho-pratico.genruntimeconfig.cache
+C:\Users\Igorw\OneDrive\Documentos\si_puc\periodo-1\algoritmos-e-tecnicas-de-programacao\trabalho-pratico\obj\Debug\net7.0\ref\trabalho-pratico.dll
