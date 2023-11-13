@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lista-lab-11", "lista-lab-11.csproj", "{28086F78-7A6A-4E6A-B0A8-E20BCE252C32}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28086F78-7A6A-4E6A-B0A8-E20BCE252C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28086F78-7A6A-4E6A-B0A8-E20BCE252C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28086F78-7A6A-4E6A-B0A8-E20BCE252C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28086F78-7A6A-4E6A-B0A8-E20BCE252C32}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BCEC6EC-B22A-4B40-BDA0-A1AF22EEC8AD}
+	EndGlobalSection
+EndGlobal
