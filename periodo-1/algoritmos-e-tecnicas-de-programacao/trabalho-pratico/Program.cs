@@ -1,41 +1,67 @@
 ﻿// Trabalho prático BINGO
-
 using System;
 
 class Cartela
 {
+    private int[][,] gameCartelas = new int[20][,];
+    private int count = 0;
     
-    private int qntCartelas;
-    
-    public static int[,] ObterCartela()
+    public int[,] ObterCartela()
     {
         Random rnd = new Random();
+
         int[,] cartela = new int[5, 5];
-        for (int i = 0; i < 5; i++)
-        {
-            for (int j = 0; j < 5; j++)
-            {
-                if (i == 2 && j == 2) cartela[i, j] = 0;
-                else switch (j)
-                    {
-                        case 0:
-                            cartela[i, j] = rnd.Next(1, 15);
-                            break;
-                        case 1:
-                            cartela[i, j] = rnd.Next(16, 30);
-                            break;
-                        case 2:
-                            cartela[i, j] = rnd.Next(31, 45);
-                            break;
-                        case 3:
-                            cartela[i, j] = rnd.Next(46, 60);
-                            break;
-                        case 4:
-                            cartela[i, j] = rnd.Next(61, 75);
-                            break;
-                    }
+
+        bool cartelaValid = false;
+
+        do{
+            for (int i = 0; i < 5; i++){
+                for (int j = 0; j < 5; j++){
+                    if (i == 2 && j == 2) cartela[i, j] = 0;
+                    else switch (j)
+                        {
+                            case 0:
+                                cartela[i, j] = rnd.Next(1, 15);
+                                break;
+                            case 1:
+                                cartela[i, j] = rnd.Next(16, 30);
+                                break;
+                            case 2:
+                                cartela[i, j] = rnd.Next(31, 45);
+                                break;
+                            case 3:
+                                cartela[i, j] = rnd.Next(46, 60);
+                                break;
+                            case 4:
+                                cartela[i, j] = rnd.Next(61, 75);
+                                break;
+                        }
+                }
             }
-        }
+
+            bool equals;
+
+            for (int i = 0; i < count; i++)
+            {
+                equals = true;
+                for (int j = 0; j < 5 && equals; j++)
+                {
+                    for (int k = 0; k < 5; k++)
+                    {
+                        if (gameCartelas[i][j, k] != cartela[j, k])
+                        {
+                            equals = false;
+                            break;
+                        }
+                    }
+                }
+                if (equals) cartelaValid = true;
+            }
+        } while (cartelaValid);
+
+        gameCartelas[count] = cartela;
+        count++;
+
         return cartela;
     }
 
@@ -63,7 +89,7 @@ class Jogador
     public int[][,] copyCartelas;
     public bool status = true;
 
-    public Jogador(string nome, string sexo, int idade, int qntCartelas)
+    public Jogador(string nome, string sexo, int idade, int qntCartelas, Cartela c)
     {
         this.nome = nome;
         this.idade = idade;
@@ -71,14 +97,14 @@ class Jogador
         this.qntCartelas = qntCartelas;
         cartelas = new int[qntCartelas][,];
         copyCartelas = new int[qntCartelas][,];
-        ObterCartelas(qntCartelas);
+        ObterCartelas(qntCartelas, c);
     }
 
-    public void ObterCartelas(int x)
+    public void ObterCartelas(int x, Cartela c)
     {
         for (int i = 0; i < x; i++)
         {
-            cartelas[i] = Cartela.ObterCartela();
+            cartelas[i] = c.ObterCartela();
             copyCartelas[i] = cartelas[i];
         }
     }
@@ -120,6 +146,7 @@ class Bingo
 {
     public static Jogador[] Preparation()
     {
+        Cartela gameCartelas = new Cartela();
         int qntJogadores;
         do
         {
@@ -148,7 +175,7 @@ class Bingo
                 qntCartelas = int.Parse(Console.ReadLine());
             } while (qntCartelas < 1 || qntCartelas > 4);
 
-            jogadores[i] = new Jogador(nome, sexo, idade, qntCartelas);
+            jogadores[i] = new Jogador(nome, sexo, idade, qntCartelas, gameCartelas);
         }
 
         for (int i = 0; i < qntJogadores; i++)
