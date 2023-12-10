@@ -5,7 +5,7 @@ class Cartela
 {
     private int[][,] gameCartelas = new int[20][,];
     private int count = 0;
-    
+
     public int[,] ObterCartela()
     {
         Random rnd = new Random();
@@ -55,7 +55,10 @@ class Cartela
                         }
                     }
                 }
-                if (equals) cartelaValid = true;
+                if (equals){
+                    cartelaValid = true;
+                    break;
+                } 
             }
         } while (cartelaValid);
 
@@ -84,8 +87,7 @@ class Jogador
     public int idade;
     public string sexo;
     public int qntCartelas;
-    public int[][,] cartelas;
-    // https://stackoverflow.com/questions/1582555/initialize-int-in-c-sharp
+    public int[][,] cartelas; // https://stackoverflow.com/questions/1582555/initialize-int-in-c-sharp
     public int[][,] copyCartelas;
     public bool status = true;
 
@@ -205,21 +207,19 @@ class Bingo
             }
         }
 
-        if (count == 5) bingo = true;
+        if ((index == 2 && count == 4) || (count == 5)) bingo = true;
         else if (jogador.cartelas.Length > 1){
             jogador.cartelas[indexCartela][0,0] = -1;
 
-            bool key = true;
+            bool oneCartela = true;
             for (int i = 0; i < jogador.cartelas.Length; i++){
                 if(jogador.cartelas[i][0,0] != -1){
-                    key = false;
+                    oneCartela = false;
                     break;
                 }
             }
-            if(key) jogador.status = false;
-        } else {
-            jogador.status = false;
-        }
+            if(oneCartela) jogador.status = false;
+        } else jogador.status = false;
 
         return bingo;
     }
@@ -239,10 +239,10 @@ class Bingo
     public static void Main()
     {
         Jogador[] jogadores = Preparation();
-        
-        Jogador [] ganhadores = new Jogador[jogadores.Length];
 
         Console.WriteLine("Todos com suas devidas cartelas, vamos iniciar o BINGO!");
+
+        Jogador [] ganhadores = new Jogador[jogadores.Length];
 
         Roulette roulette = new Roulette();
 
