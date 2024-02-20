@@ -9,7 +9,6 @@ simplificação considere que cada mês possui somente 4 semanas. Calcule e impr
 - Total vendido no ano;
 - Considerando todas as vendas do ano, informe qual é a melhor semana para vender carros (1ª, 2ª, 3ª ou 4ª)
 
-
 namespace exercicio_01
 {
     class Ex01
@@ -56,6 +55,34 @@ namespace exercicio_01
             Console.WriteLine($"\n");
             Console.WriteLine($"O valor total de vendas anual foi: R$ {salesTotal}");
             Console.WriteLine($"A melhor semana para venda de carros é a {bestWeek}° semana.");
+        }
+    }
+}
+
+
+02 - Faça um programa que leia uma sequência de números inteiros positivos, até que seja informado o valor -1.
+Este programa deve responder qual é o tamanho da maior sequência crescente recebida
+
+namespace exercicio_02
+{
+    class Ex02
+    {
+        public static void Main(string[] args)
+        {
+            int n = 0, x, count = 0, biggerCount = 0;
+            do {
+                Console.WriteLine("Digite um valor:");
+                x = int.Parse(Console.ReadLine());
+                if(x > n){
+                    count++;
+                    n = x;
+                } else {
+                    if(biggerCount < count) biggerCount = count;
+                    count = 0;
+                }
+            }while (x != -1);
+
+            Console.WriteLine($"Este programa teve a maior sequencia crescente com {biggerCount} numeros");
         }
     }
 }
