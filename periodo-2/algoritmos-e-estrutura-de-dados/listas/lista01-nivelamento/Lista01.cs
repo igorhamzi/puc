@@ -86,3 +86,29 @@ namespace exercicio_02
         }
     }
 }
+
+
+03 - Escreva um programa que calcule e mostre o valor da série:
+
+namespace exercicio_03
+{
+    class Ex03
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o valor de n:");
+            int n = int.Parse(Console.ReadLine());
+
+            double p = 4;
+            int count = 1;
+
+            for (int i = 3; i <= n; i=i+2){
+                if(count % 2 == 0){
+                    p += 4/i;
+                } else p += 4/i;
+            }
+
+            Console.WriteLine($"O valor de P é:{p}");
+        }
+    }
+}
